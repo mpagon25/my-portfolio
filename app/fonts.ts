@@ -1,4 +1,9 @@
-import { Share, Share_Tech, Share_Tech_Mono } from "next/font/google";
+import {
+  Share,
+  Share_Tech,
+  Share_Tech_Mono,
+  Turret_Road,
+} from "next/font/google";
 
 export const share = Share({
   variable: "--font-share",
@@ -14,6 +19,12 @@ export const shareTech = Share_Tech({
 
 export const shareTechMono = Share_Tech_Mono({
   variable: "--font-share-tech-mono",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+export const turretRoad = Turret_Road({
+  variable: "--font-turret-road",
   subsets: ["latin"],
   weight: "400",
 });

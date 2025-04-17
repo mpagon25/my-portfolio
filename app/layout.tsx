@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { share, shareTech, shareTechMono } from "./fonts";
+import { share, shareTech, shareTechMono, turretRoad } from "./fonts";
+import NavBar from "./ui/nav/nav-bar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${share.variable} ${shareTech.variable} ${shareTechMono.variable} antialiased`}
+        className={`${share.variable} ${shareTech.variable} ${shareTechMono.variable} ${turretRoad.variable} antialiased`}
       >
+        <NavBar />
         {children}
       </body>
     </html>
